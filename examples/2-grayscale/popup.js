@@ -1,5 +1,4 @@
 let input = document.querySelector('input');
-console.log('popup js loaded')
 input.addEventListener('change', e => setValue(e.target.value));
 
 async function setValue(value) {
@@ -8,7 +7,6 @@ async function setValue(value) {
 
 async function init() {
   let {value} = await browser.storage.local.get();
-  console.log('init value: ', value);
   if (!value) {
     value = 0
   }

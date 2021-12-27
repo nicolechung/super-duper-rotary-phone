@@ -1,4 +1,8 @@
 (function() {
+  /**
+   * We only want to run this one time
+   * Otherwise you will have multiple style tags on the page
+   */
   if(window.hasRun) {
     return;
   }
