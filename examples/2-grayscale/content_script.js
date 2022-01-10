@@ -7,6 +7,7 @@
     return;
   }
   window.hasRun = true
+  
   let style = document.createElement('style');
   document.body.appendChild(style);
   
