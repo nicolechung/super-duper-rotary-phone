@@ -1,0 +1,18 @@
+{
+  "name": "Grayscale",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "photo-camera-interface-symbol-for-button.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab", "scripting"]
+}
